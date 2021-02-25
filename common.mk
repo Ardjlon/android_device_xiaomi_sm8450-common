@@ -127,9 +127,6 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl-qti.recovery:64 \
     android.hardware.boot@1.2-service
 
-PRODUCT_PACKAGES_DEBUG += \
-    bootctl:64
-
 # Camera
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
@@ -442,9 +439,6 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_engine_sideload \
     update_verifier
-
-PRODUCT_PACKAGES_DEBUG += \
-    update_engine_client
 
 # USB
 PRODUCT_PACKAGES += \
