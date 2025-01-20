@@ -879,6 +879,17 @@ vendor/lib64/sensors.ssc.so
 vendor/lib64/sensors.touch.detect.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
+# Sensor - CIT
+vendor/bin/hw/vendor.xiaomi.sensor.citsensorservice@2.0-service;DISABLE_CHECKELF
+vendor/etc/init/vendor.xiaomi.sensor.citsensorservice@2.0-service.rc
+vendor/etc/vintf/manifest/vendor.xiaomi.sensor.citsensorservice@2.0-service.xml
+# vendor/lib/hw/vendor.xiaomi.sensor.citsensorservice@2.0-impl.so
+vendor/lib/vendor.xiaomi.sensor.citsensorservice@1.1.so
+vendor/lib/vendor.xiaomi.sensor.citsensorservice@2.0.so
+vendor/lib64/hw/vendor.xiaomi.sensor.citsensorservice@2.0-impl.so
+vendor/lib64/vendor.xiaomi.sensor.citsensorservice@1.1.so
+vendor/lib64/vendor.xiaomi.sensor.citsensorservice@2.0.so
+
 # Sensors ultrasound
 vendor/lib64/libultrasound_notify.so
 vendor/lib64/sensors.ultrasoundproximity.so
