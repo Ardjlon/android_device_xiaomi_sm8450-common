@@ -14,6 +14,7 @@ LOCAL_OVERRIDES_PACKAGES := \
         DCMO \
         DevicePolicyPrebuilt \
         DMService \
+        DotGallery \
         Drive \
         Eleven \
         Gallery2 \
