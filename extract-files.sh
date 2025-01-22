@@ -107,6 +107,7 @@ function blob_fixup() {
             sed -i '/dolby/d' "${2}"
             ;;
         vendor/etc/msm_irqbalance.conf)
+            [ "$2" = "" ] && return 0
             sed -i "s/IGNORED_IRQ=27,23,38$/&,115,332/" "${2}"
             ;;
         vendor/lib64/vendor.libdpmframework.so)
