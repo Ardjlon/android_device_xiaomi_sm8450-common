@@ -50,7 +50,10 @@ function lib_to_package_fixup_vendor_variants() {
             echo "$1-vendor"
             ;;
         libagm | \
+        libar-acdb | \
         libar-pal | \
+        libats | \
+        liblx-osal | \
         libpalclient | \
         libwpa_client)
             ;;
