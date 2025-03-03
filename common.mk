@@ -147,6 +147,9 @@ WITH_DEXPREOPT_DEBUG_INFO := false
 PRODUCT_PACKAGES += \
     XiaomiDolby
 
+PRODUCT_PACKAGES += \
+    libstagefright_foundation-v33
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
