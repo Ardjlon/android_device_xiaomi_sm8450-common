@@ -83,6 +83,9 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "android.media.audio.common.types-V2-cpp.so" "android.media.audio.common.types-V4-cpp.so" "${2}"
             ;;
+        system_ext/app/QtiTelephony/QtiTelephony.apk)
+            apktool_patch "${2}" "../sm8450-common/patches"
+            ;;
         vendor/bin/hw/android.hardware.security.keymint-service-qti|vendor/lib64/libqtikeymint.so)
             [ "$2" = "" ] && return 0
             "${PATCHELF}" --replace-needed "android.hardware.security.keymint-V1-ndk_platform.so" "android.hardware.security.keymint-V1-ndk.so" "${2}"
