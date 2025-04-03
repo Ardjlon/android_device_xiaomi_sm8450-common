@@ -1,4 +1,4 @@
-# All unpinned blobs below are extracted from marble OS1.0.17.0.UMREUXM
+# All unpinned blobs below are extracted from cupid OS2.0.7.0.VLCCNXM
 
 # Current blobs with ELF checks disabled:
 # libcne, libmasc, lowi-server, qms depend on libwpa_client, which is a gnu makefile target
@@ -56,14 +56,14 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 
 # Bluetooth (LDAC & LHDC)
-system/lib/libldacBT_abr.so
-system/lib/libldacBT_enc.so
-system_ext/lib/liblhdcBT_enc.so
-system_ext/lib/liblhdc.so
-system/lib64/libldacBT_abr.so
-system/lib64/libldacBT_enc.so
-system_ext/lib64/liblhdcBT_enc.so
-system_ext/lib64/liblhdc.so
+system/lib/libldacBT_abr.so|df5fd8ec11088b856b9ab7ec4578fae020187053
+system/lib/libldacBT_enc.so|640a7adeb984f28a8498a87b30a0f28141bb07aa
+system_ext/lib/liblhdcBT_enc.so|7c5b5fd0a4f815c6a19435515bb4aa98cb0fa809
+system_ext/lib/liblhdc.so|3aa0e656ba9991b392a0fd1451916799d3a48444
+system/lib64/libldacBT_abr.so|a047c11e7c506f48de5580e6a819e659fa208f1b
+system/lib64/libldacBT_enc.so|d859ffa7da473040417234de67fe6342abec6968
+system_ext/lib64/liblhdcBT_enc.so|6575185953e386e9a56ed4f40c16da59a575de56
+system_ext/lib64/liblhdc.so|b8e88fc77386ca814dc56aea5c0ad2a0cc19119b
 
 # CDSP
 vendor/bin/cdsprpcd
@@ -175,6 +175,7 @@ vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
 # Diag
+system/lib64/vendor.qti.diaghal-V1-ndk.so
 system_ext/lib64/vendor.qti.diaghal@1.0.so
 vendor/bin/diag-router
 vendor/etc/init/vendor.qti.diag.rc
@@ -363,7 +364,7 @@ vendor/lib64/vendor.qti.gnss-V5-ndk.so|4854ea8bf89c800f72ee9d7d25fc94c61d2bff4f
 vendor/lib64/vendor.qti.gnss-service.so|f27f0dbdd9f638ea9207ad05933b1c42e7e6a922
 
 # Graphics (Adreno)
-vendor/app/com.qualcomm.qti.gpudrivers.taro.api32/com.qualcomm.qti.gpudrivers.taro.api32.apk
+vendor/app/com.qualcomm.qti.gpudrivers.taro.api32/com.qualcomm.qti.gpudrivers.taro.api32.apk|3957765d7719c17747c2493504cfb12e1861c71d
 vendor/gpu/kbc/sequence_manifest.bin
 vendor/gpu/kbc/unified_kbcs_32.bin
 vendor/gpu/kbc/unified_kbcs_64.bin
@@ -429,7 +430,7 @@ vendor/lib64/libspcom.so
 vendor/bin/hw/android.hardware.security.keymint-service-qti
 vendor/etc/init/android.hardware.security.keymint-service-qti.rc
 vendor/etc/permissions/android.hardware.hardware_keystore.xml:vendor/etc/permissions/android.hardware.hardware_keystore.km100.xml
-vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti-rkp.xml
+vendor/etc/vintf/manifest/android.hardware.security.keymint-service-qti.xml
 vendor/lib64/libqtikeymint.so
 
 # Media
@@ -627,7 +628,6 @@ product/framework/uimgbamanagerlibrary.jar
 product/framework/uimservicelibrary.jar
 system_ext/app/AtFwd2/AtFwd2.apk
 system_ext/app/ImsRcsService/ImsRcsService.apk
-system_ext/app/QtiTelephony/QtiTelephony.apk;REQUIRED=QtiTelephonyCompat
 system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
 system_ext/etc/permissions/qti_permissions.xml
@@ -659,6 +659,7 @@ system_ext/lib64/vendor.qti.ImsRtpService-V1-ndk.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.0.so
 system_ext/lib64/vendor.qti.imsrtpservice@3.1.so
 system_ext/priv-app/ims/ims.apk;REQUIRED=QtiTelephonyCompat
+system_ext/priv-app/QtiTelephony/QtiTelephony.apk;REQUIRED=QtiTelephonyCompat
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/app/IWlanService/IWlanService.apk
 vendor/bin/ATFWD-daemon
@@ -968,6 +969,7 @@ vendor/etc/init/qconfig.rc
 vendor/etc/init/vppservice.rc
 vendor/etc/vintf/manifest/vendor.qti.hardware.qconfig@1.0-service.xml
 vendor/etc/vintf/manifest/vendor.qti.hardware.vpp@2.0-service.xml
+vendor/lib64/libmisight.so
 vendor/lib64/libvppcommon.so
 vendor/lib64/libvpphcp.so
 vendor/lib64/libvpphvx.so
@@ -1022,6 +1024,7 @@ system_ext/lib64/libwfduibcsinkinterface.so
 system_ext/lib64/libwfduibcsrc.so
 system_ext/lib64/libwfduibcsrcinterface.so
 system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so
+system_ext/lib64/vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk.so
 system_ext/priv-app/WfdService/WfdService.apk
 vendor/bin/wfdhdcphalservice
 vendor/bin/wfdvndservice
