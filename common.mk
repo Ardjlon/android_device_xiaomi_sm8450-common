@@ -247,11 +247,8 @@ PRODUCT_PACKAGES += \
 
 # Media
 PRODUCT_PACKAGES += \
-    android.hardware.media.c2@1.2.vendor \
     init.qti.media.rc \
     init.qti.media.sh \
-    libcodec2_hidl@1.0.vendor \
-    libcodec2_vndk.vendor \
     libstagefright_softomx_plugin.vendor
 
 PRODUCT_COPY_FILES += \
