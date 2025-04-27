@@ -30,7 +30,6 @@ vendor/lib64/libqtigefar.so;DISABLE_CHECKELF
 
 # Audio soundfx
 vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libmisoundfx.so
 vendor/lib64/soundfx/libshoebox.so
 
 # Audio FX modules - from qssi-user-14-UKQ1.230924.001-1702916091049-release-keys
