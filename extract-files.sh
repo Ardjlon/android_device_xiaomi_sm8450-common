@@ -157,8 +157,18 @@ if [ -z "${ONLY_COMMON}" ] && [ -s "${MY_DIR}/../../${VENDOR}/${DEVICE}/propriet
         extract "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
     fi
 
-    if [ -z "${SECTION}" ] && [ -f "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-firmware.txt" ]; then
-        extract_firmware "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-firmware.txt" "${SRC}"
+    # Firmware handling
+    if [ "${ONLY-FIRMWARE}" = "true" ]; then
+        if [ -f "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-firmware.txt" ]; then
+            while IFS= read -r FILE || [ -n "$FILE" ]; do
+                FILE="$(echo "$FILE" | sed -e 's|^\s*||' -e 's|\s*$||')"
+                [ -z "$FILE" ] && continue
+                [[ "$FILE" == \#* ]] && continue
+                DEST_DIR="$ANDROID_ROOT/vendor/${VENDOR}/${DEVICE}-firmware/images"
+                echo "Copying ${FILE} to vendor/${VENDOR}/${DEVICE}-firmware/images/$(basename "${FILE}")"
+                cp -f "${SRC}/${FILE}" "${DEST_DIR}/$(basename "${FILE}")"
+            done < "${MY_DIR}/../../${VENDOR}/${DEVICE}/proprietary-firmware.txt"
+        fi
     fi
 fi
 
