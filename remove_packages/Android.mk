@@ -23,10 +23,12 @@ LOCAL_OVERRIDES_PACKAGES := \
         Glimpse \
         GrapheneOSCamera \
         HealthIntelligenceStubPrebuilt \
+        Jelly \
         MaestroPrebuilt \
         Maps \
         MeetPrebuilt \
         MicropaperPrebuilt \
+        Music \
         MusicFX \
         MyVerizonServices \
         OBDM_Permissions \
@@ -43,6 +45,7 @@ LOCAL_OVERRIDES_PACKAGES := \
         SoundAmplifierPrebuilt \
         SprintDM \
         SprintHM \
+        Twelve \
         Tycho \
         USCCDM \
         ViaBrowser \
